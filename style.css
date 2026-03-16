@@ -1,0 +1,472 @@
+:root {
+    --pastel-red: #ff8a8a;
+    --deep-red: #8b0000;
+    --glass-bg: rgba(255, 255, 255, 0.2);
+    --glass-border: 1px solid rgba(255, 255, 255, 0.3);
+    --card-radius: 30px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background: linear-gradient(135deg, #f44336 0%, #fecfef 100%);
+    background-attachment: fixed;
+    color: #333;
+    line-height: 1.6;
+}
+
+.glass-header {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 1000px;
+    height: 70px;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+    border: var(--glass-border);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.logo-img {
+    height: 45px;
+    width: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container a {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img:hover {
+    transform: rotate(5deg) scale(1.1);
+}
+
+.glass-nav {
+    display: flex;
+    gap: 10px;
+}
+
+.glass-nav a {
+    text-decoration: none;
+    color: var(--deep-red);
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.glass-nav a.active, .glass-nav a:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.main-container {
+    max-width: 900px;
+    margin: 120px auto 50px;
+    padding: 0 20px;
+}
+
+.glass-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: var(--card-radius);
+    border: 2px solid #dc2626;
+    padding: 40px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+h1, h2, h3 {
+    color: var(--deep-red);
+    margin-top: 0;
+}
+
+.styled-list {
+    list-style: none;
+    padding: 0;
+}
+
+.styled-list li {
+    margin: 15px 0;
+    padding-left: 30px;
+    position: relative;
+}
+
+.styled-list li::before {
+    content: "●";
+    color: var(--pastel-red);
+    position: absolute;
+    left: 0;
+    font-size: 1.2em;
+}
+
+.rounded-image {
+    width: 100%;
+    border-radius: var(--card-radius);
+    margin: 20px 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.glass-button {
+    background: #f44336;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 4px 15px rgba(255, 94, 94, 0.3);
+}
+
+.glass-button:hover {
+    background: var(--deep-red);
+    transform: translateY(-2px);
+}
+
+.glass-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.glass-form input {
+    width: 100%;
+    padding: 15px;
+    border-radius: 15px;
+    border: none;
+    background: rgba(255, 255, 255, 0.5);
+    outline: none;
+}
+
+.glass-footer {
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    border-top: var(--glass-border);
+    padding: 30px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.grid-item h4 {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.hero-section {
+    text-align: center;
+    padding: 60px 40px !important;
+}
+
+.hero-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero-section h2 {
+    font-size: 1.5em;
+    color: var(--pastel-red);
+    margin-bottom: 20px;
+}
+
+.highlight-red {
+    border: 2px solid var(--pastel-red) !important;
+}
+
+/* ===== МИНИ-ИГРА ===== */
+.game-section {
+    margin-top: 40px;
+}
+
+.game-section h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.game-container {
+    max-width: 100%;
+}
+
+.game-progress {
+    margin-bottom: 30px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #ff8a8a, #f44336);
+    transition: width 0.3s ease;
+}
+
+#progressText {
+    text-align: center;
+    font-weight: bold;
+    color: var(--deep-red);
+}
+
+.game-area {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.question-title {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: var(--deep-red);
+    text-align: center;
+}
+
+.answer-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.answer-btn {
+    padding: 15px 20px;
+    background: white;
+    border: 2px solid #ddd;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s;
+    text-align: center;
+}
+
+.answer-btn:hover {
+    border-color: var(--pastel-red);
+    background: rgba(255, 138, 138, 0.1);
+    transform: scale(1.02);
+}
+
+.answer-btn.selected {
+    background: var(--pastel-red);
+    color: white;
+    border-color: var(--pastel-red);
+}
+
+.answer-btn.correct {
+    background: #4CAF50;
+    color: white;
+    border-color: #4CAF50;
+}
+
+.answer-btn.incorrect {
+    background: #f44336;
+    color: white;
+    border-color: #f44336;
+}
+
+.answer-btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.result-area {
+    text-align: center;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+}
+
+.result-area.hidden {
+    display: none;
+}
+
+.result-area h4 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: var(--deep-red);
+}
+
+.result-area p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.next-btn {
+    padding: 12px 30px;
+    background: var(--pastel-red);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s;
+    margin-top: 15px;
+}
+
+.next-btn:hover {
+    background: var(--deep-red);
+    transform: scale(1.05);
+}
+
+#formMessage {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+@media (max-width: 600px) {
+    .glass-header {
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+        top: 10px;
+    }
+    
+    .main-container {
+        margin-top: 160px;
+    }
+    
+    .glass-card {
+        padding: 25px;
+    }
+    
+    .grid-layout {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .hero-section h1 {
+        font-size: 1.8em;
+    }
+    
+    .hero-section h2 {
+        font-size: 1.1em;
+    }
+
+    .answer-options {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Пофиксил: теперь карточки видны по дефолту */
+.glass-card {
+    opacity: 1; 
+    transform: translateY(0); 
+    transition: transform 0.4s ease, opacity 0.4s ease, box-shadow 0.3s ease;
+}
+
+/* Эффект при наведении для стиля */
+.glass-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+} {
+    opacity: 0;
+    transform: translateY(100px); /* Сдвигаем вниз */
+    /* Убираем transition, так как GSAP сам всё сделает */
+}
+/* Контейнер для видео */
+.shorts-container {
+    display: grid;
+    /* Автоматически размещаем видео в ряд, минимум 250px в ширину */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px; /* Отступы между плеерами */
+    margin-top: 20px;
+}
+
+/* Обертка для каждого видео (создаем форму смартфона) */
+.short-video {
+    position: relative;
+    width: 100%;
+    /* Этот хак создает пропорции 9:16 (как экран телефона) */
+    padding-top: 177.77%; /* 16 / 9 * 100% */
+    
+    background: #000; /* Черный фон до загрузки видео */
+    border-radius: 25px; /* Сильно закругленные углы */
+    overflow: hidden; /* Обрезаем все, что вылезает за углы */
+    
+    /* Футуристичные тени и рамка */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease; /* Плавное увеличение при наведении */
+}
+
+/* Эффект при наведении */
+.short-video:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(220, 38, 38, 0.2); /* Красное свечение */
+    border-color: rgba(220, 38, 38, 0.5);
+}
+
+/* Растягиваем iframe на всю обертку */
+.short-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    pointer-events: auto; /* Чтобы можно было кликать play */
+}
+
+/* --- Мобильная версия (горизонтальный скролл как в ТикТок) --- */
+@media (max-width: 768px) {
+    .shorts-container {
+        display: flex;
+        overflow-x: auto; /* Включаем горизонтальную прокрутку */
+        scroll-snap-type: x mandatory; /* Видео будут "прилипать" к центру */
+        padding: 10px 5px 30px 5px; /* Отступы, чтобы не обрезались тени */
+        -webkit-overflow-scrolling: touch; /* Плавный скролл на iOS */
+    }
+
+    .short-video {
+        /* Фиксированная ширина на телефоне, чтобы они были в ряд */
+        flex: 0 0 280px; 
+        margin-right: 20px;
+        scroll-snap-align: center; /* Центрируем активное видео */
+    }
+    
+    /* Убираем скроллбар для красоты */
+    .shorts-container::-webkit-scrollbar {
+        display: none;
+    }
+}

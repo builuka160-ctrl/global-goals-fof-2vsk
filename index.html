@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <link rel="icon" href="https://www.globalgoals.org/favicon.ico">
+    <title>Sākums | Bezdarba </title>
+</head>
+<body class="bg-gray-100 text-black antialiased selection:bg-red-500/30">
+    <div class="liquid-bg"></div>
+     <header class="glass-header">
+        <div class="logo-img.png">
+            <a href="index.html" aria-label="Sākulapa">
+                <img src="logo-img.png" alt="SDG Лого" class="logo-img.png" width="60" height="60">
+            </a>
+        </div>
+        <nav class="glass-nav" aria-label="Galvenā navigācija">
+            <a href="index.html" class="nav-link active" aria-current="page">Sākums</a>
+            <a href="about.html" class="nav-link">Par Mērķiem</a>
+            <a href="donate.html" class="nav-link">Donate</a>
+        </nav>
+    </header>
+
+    <main class="relative z-10 pt-32 pb-20 px-4 w-full max-w-4xl mx-auto space-y-8">
+      <article class="glass-card relative overflow-hidden w-full border-l-8 border-red-600 bg-white/10 backdrop-blur-lg shadow-2xl transition-all hover:shadow-red-600/10 group">
+    <div class="absolute -top-24 -right-24 w-48 h-48 bg-red-600/5 rounded-full blur-3xl group-hover:bg-red-600/10 transition-colors"></div>
+    <div class="p-10 relative z-10">
+        <div class="flex items-center gap-3 mb-8">
+            <div class="h-2 w-2 bg-red-600 animate-pulse rounded-full"></div>
+            <h1 class="text-xs font-black uppercase tracking-[0.4em] text-red-600 italic">Latvijas Bezdarba Analīze</h1>
+        </div>
+        <div class="grid md:grid-cols-2 gap-12 text-black">
+            <div class="space-y-6">
+                <div class="relative">
+                    <p class="text-3xl font-light leading-tight">
+                        Latvijā: <span class="text-red-600 font-black">5.9%</span>
+                    </p>
+                    <div class="h-1 w-20 bg-red-600 mt-2 rounded-full"></div>
+                </div>
+                <p class="text-sm leading-relaxed text-gray-700">
+                    <span class="bg-red-50 px-1 py-0.5 rounded text-red-700 font-bold">Latgales reģionā (Rēzekne)</span> rādītāji saglabājas stabili augsti, sasniedzot <span class="text-lg font-bold text-black italic">11%</span>. Strukturālais bezdarbs joprojām ir galvenais izaicinājums.
+                </p>
+            </div>
+            <div class="flex flex-col justify-end border-t md:border-t-0 md:border-l border-gray-100 pt-6 md:pt-0 md:pl-8 space-y-4">
+                <div class="space-y-3">
+                    <p class="text-[10px] font-black uppercase tracking-widest text-gray-400 flex items-center gap-2">
+                        <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        Oficiālie avoti
+                    </p>
+                    <div class="flex flex-col gap-2">
+                        <a href="https://www.nva.gov.lv/lv/bezdarba-statistika" target="_blank" class="text-xs font-bold text-gray-500 hover:text-red-600 flex items-center gap-2 transition-all transform hover:translate-x-1">
+                            <span>NVA Statistikas dati</span>
+                        </a>
+                        <a href="https://stat.gov.lv/lv/statistikas-temas/darba-tirgus/bezdarbs" target="_blank" class="text-xs font-bold text-gray-500 hover:text-red-600 flex items-center gap-2 transition-all transform hover:translate-x-1">
+                            <span>CSP Portāls</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</article>
+<section class="glass-card w-full border-l-8 border-red-600 min-h-[480px] flex flex-col justify-between overflow-hidden">
+    <div class="p-8 pb-0">
+        <h2 class="text-xs font-black uppercase tracking-[0.3em] text-red-600">Tirgus Dinamika (2023-2026)</h2>
+    </div>
+    <div class="flex items-end justify-between gap-4 w-full px-8 mt-auto">
+        <div class="flex flex-col items-center w-full gap-2">
+            <span class="text-lg font-bold">6.1%</span>
+            <div class="bg-red-600 rounded-t-2xl w-full" style="height: 240px;"></div>
+            <div class="w-full py-4 text-center border-t border-gray-100">
+                <span class="text-sm uppercase font-black opacity-30">2023</span>
+            </div>
+        </div>
+        <div class="flex flex-col items-center w-full gap-2">
+            <span class="text-lg font-bold text-red-600">6.5%</span>
+            <div class="bg-red-600 rounded-t-2xl w-full" style="height: 300px;"></div>
+            <div class="w-full py-4 text-center border-t border-gray-100">
+                <span class="text-sm uppercase font-black opacity-30">2024</span>
+            </div>
+        </div>
+        <div class="flex flex-col items-center w-full gap-2">
+            <span class="text-lg font-bold">5.4%</span>
+            <div class="bg-red-600 rounded-t-2xl w-full" style="height: 120px;"></div>
+            <div class="w-full py-4 text-center border-t border-gray-100">
+                <span class="text-sm uppercase font-black opacity-30">2025</span>
+            </div>
+        </div>
+        <div class="flex flex-col items-center w-full gap-2">
+            <span class="text-lg font-bold">5.9%</span>
+            <div class="bg-red-600 rounded-t-2xl w-full" style="height: 180px;"></div>
+            <div class="w-full py-4 text-center border-t border-gray-100">
+                <span class="text-sm uppercase font-black opacity-30">2026*</span>
+            </div>
+        </div>
+    </div>
+</section>
+        <article class="glass-card p-10 w-full text-center border-l-8 border-red-600">
+            <div class="simulator-display bg-white/40 border border-black/5 rounded-[40px] p-12 mb-8 shadow-inner">
+                <p class="text-[10px] uppercase text-gray-500 font-black tracking-[0.4em] mb-4">Bezdarba procents</p>
+                <div id="ui-percent" class="text-8xl font-black italic tracking-tighter text-black">0%</div>
+            </div>
+            <div class="flex justify-between items-center mb-8 px-6">
+                <span class="text-xs text-black font-black uppercase italic tracking-widest">Deporteti:</span>
+                <span id="ui-fired" class="text-4xl font-black text-red-600 font-mono">0</span>
+            </div>
+            <button id="fire-btn" class="w-full py-8 rounded-[30px] bg-black text-white text-2xl font-black uppercase tracking-widest hover:bg-red-600 active:scale-95 transition-all duration-300 shadow-2xl">
+                deportēt indušu no bolt
+            </button>
+        </article>
+    </main>
+
+    <script>
+        function nav(page) {
+            console.log("Navigating to:", page);
+        }
+        let firedCount = 0;
+        let percent = 0;
+        const btn = document.getElementById('fire-btn');
+        const percentEl = document.getElementById('ui-percent');
+        const firedEl = document.getElementById('ui-fired');
+        btn.addEventListener('click', () => {
+            firedCount += 1;
+            percent = (firedCount * 0.4).toFixed(1);
+            firedEl.innerText = firedCount;
+            percentEl.innerText = percent + "%";
+            gsap.fromTo(percentEl, { x: -2 }, { x: 2, duration: 0.05, repeat: 5, yoyo: true });
+            if (percent >= 10) {
+                percentEl.classList.add('text-red-600');
+            }
+        });
+    </script>
+    <section class="glass-card p-10">
+    <h1 class="text-[40px] font-black uppercase tracking-widest mb-6 opacity-40">Ekspertu viedoklis</h1>
+<div class="shorts-container">
+    <div class="short-video">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/EW_rK4fKqXM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="short-video">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/h5rwMbQPGm4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="short-video">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/8WaFAJluFdw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
+</section>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const cards = document.querySelectorAll('.glass-card');
+        const animateCards = () => {
+            cards.forEach(card => {
+                const rect = card.getBoundingClientRect();
+                if (rect.top < window.innerHeight - 100) {
+                    gsap.to(card, {
+                        opacity: 1,
+                        y: 0,
+                        duration: 1.2,
+                        ease: "power3.out",
+                        overwrite: "auto"
+                    });
+                }
+            });
+        };
+        window.addEventListener('scroll', animateCards);
+        animateCards();
+        const btn = document.getElementById('fire-btn');
+        const percentEl = document.getElementById('ui-percent');
+        const firedEl = document.getElementById('ui-fired');
+        let firedCount = 0;
+        if (btn) {
+            btn.addEventListener('click', () => {
+                firedCount++;
+                let percent = (firedCount * 0.4).toFixed(1);
+                firedEl.innerText = firedCount;
+                percentEl.innerText = percent + "%";
+                gsap.fromTo(percentEl, 
+                    { x: -5 }, 
+                    { x: 5, duration: 0.05, repeat: 5, yoyo: true }
+                );
+                if (parseFloat(percent) >= 10) {
+                    percentEl.classList.remove('text-black');
+                    percentEl.classList.add('text-red-600');
+                }
+            });
+        }
+    });
+</script>
+</body>
+    <footer class="text-center opacity-40 pb-10 text-[9px] font-bold text-black uppercase tracking-[0.6em]">
+       Foxyan.ink | 2.vsk 9a Project | 2026
+    </footer>
+</html>
